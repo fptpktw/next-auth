@@ -1,0 +1,123 @@
+/* ---- MUI DRAWER ---- */
+.MuiDrawer-paper {
+  border-right: none !important;
+  /* background: var(--app-bg-color) !important; */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ---- MUI TABLE ---- */
+.MuiListItemIcon-root {
+  min-width: 25px !important;
+}
+.MuiToolbar-root {
+  min-height: 58px !important;
+  /* background-color: var(--app-bg-color) !important; */
+}
+.MuiTypography-root {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+}
+.MuiPaper-elevation1 {
+  border-radius: 10px !important;
+}
+.MuiTablePagination-root {
+  border-radius: 0 0 10px 10px !important;
+}
+[data-theme="dark"] .MuiTable-root {
+  background-color: #58668a;
+  border-radius: 10px 10px 0 0 !important;
+}
+[data-theme="light"] .MuiTable-root {
+  background-color: #d0d0d0;
+  border-radius: 10px 10px 0 0 !important;
+}
+[data-theme="dark"] .MuiTableBody-root {
+  background-color: #7884a3;
+}
+[data-theme="light"] .MuiTableBody-root {
+  background-color: white;
+}
+.MuiTableCell-head {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+[data-theme="dark"] .MuiTableCell-body {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  color: #dcdcdc !important;
+  border-bottom: solid 1px #67718b;
+}
+[data-theme="light"] .MuiTableCell-body {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  color: var(--grey-color) !important;
+  border-bottom: solid 1px #e4e4e4;
+}
+[data-theme="dark"] .MuiTablePagination-toolbar {
+  background-color: #58668a !important;
+  border-top: solid 1px #e4e4e4;
+}
+[data-theme="light"] .MuiTablePagination-toolbar {
+  background-color: #d0d0d0 !important;
+}
+.MuiTablePagination-selectLabel {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+.MuiTablePagination-input {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+.MuiTablePagination-displayedRows {
+  font-family: "Lamoon" !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+/* ---- SWEET ALERT ---- */
+.swal2-container {
+  position: absolute !important;
+  z-index: 2060 !important;
+}
+
+/* ---- DATEPICKER ---- */
+[data-theme="dark"] .react-datepicker__input-container input {
+  background-color: #58668a;
+  border: solid 1px #58668a;
+  box-shadow: inset -1px -2px 1px 0px var(--second-color);
+  border-radius: 8px !important;
+  display: flex;
+  padding: 0 10px;
+}
+[data-theme="light"] .react-datepicker__input-container input {
+  background-color: "white";
+  border: solid 1px var(--app-bg-color);
+  box-shadow: inset -1px -2px 1px 0px var(--second-color);
+  border-radius: 8px !important;
+  display: flex;
+  padding: 0 10px;
+}
+.react-datepicker__month-container {
+  font-family: "Lamoon";
+  font-size: 16px;
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: transparent !important;
+  color: black !important;
+}
+.react-datepicker__day--selected {
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--sub-color)
+  );
+}

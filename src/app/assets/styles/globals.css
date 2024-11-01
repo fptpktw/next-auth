@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../fonts/Mitr-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lamoon';
+  src: url('../fonts/Lamoon-Regular.ttf');
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-color: #756AB6;
+  --sub-color: #B2A4FF;
+  --second-color: #dfdafb;
+  --red-color: #ec3651;
+  --green-color: #3eb695;
+  --orange-color: #ff9727;
+  --blue-color: #74d0ec;
+  --pink-color: #f76bf7;
+  --grey-color: rgb(130, 130, 130);
+  --app-bg-color:rgb(238, 237, 240);
+  --main-dark-mode: #202333;
+  --sub-dark-mode: #2b2f44;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* color: var(--foreground); */
+  /* background: var(--app-bg-color) !important; */
+  font-family: 'Lamoon' !important;
+  font-size: 20px !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--main-color), var(--sub-color));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main-input {
+  /* background-color: var(--second-color); */
+  border: solid 1px var(--app-bg-color) !important;
+  box-shadow: inset -1px -2px 1px 0px var(--second-color);
+  border-radius: 8px !important;
+  display: flex;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.card-main {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px -4px #888888 !important;
+  padding: 15px;
+  margin: -7px -5px 20px -5px;
+}
+
+.bg-menu-active {
+  background: linear-gradient(to right, var(--main-color), var(--sub-color));
+  color: white;
+}
+
+pre {
+  font-family: 'Lamoon' !important;
+  font-size: 20px !important;
+}
+
+.loading-custom {
+  min-height: 95vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+}

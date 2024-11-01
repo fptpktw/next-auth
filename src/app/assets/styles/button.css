@@ -1,0 +1,70 @@
+
+  .btn-sm{
+    font-size: 13px !important;
+  }
+  .btn-md{
+    font-size: 14px !important;
+    max-height: 32px !important;
+  }
+  .main-button{
+    color: whitesmoke !important;
+    border-radius: 10px !important;
+    border:none !important;
+    background-image: linear-gradient(to right,var(--main-color), var(--sub-color));
+    box-shadow: 3px 3px 5px -4px #888888;
+    padding: 1px 10px  !important;
+  }
+  .main-button:active{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-image: linear-gradient(to right,var(--main-color),var(--main-color));
+  }
+  
+  .default-button{
+    /*color: rgb(61, 61, 61) !important;*/
+    color: white !important;
+    border-radius: 10px !important;
+    border:none !important;
+    background-image: linear-gradient(to right, var(--pink-color), #f4a9f1);
+    box-shadow: 3px 3px 5px -4px #888888;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .default-button:active{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-image: linear-gradient(to right, var(--pink-color), var(--pink-color));
+  }
+  .accept-button{
+    color: whitesmoke !important;
+    border-radius: 10px !important;
+    border:none !important;
+    background-image: linear-gradient(to right,var(--green-color), rgb(124, 196, 177));
+    box-shadow: 3px 3px 5px -4px #888888;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .accept-button:active{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-image: linear-gradient(to right,var(--green-color),var(--green-color));
+  }
+  .cancel-button{
+    color: white !important;
+    border-radius: 10px !important;
+    border:none !important;
+    background-image: linear-gradient(to right, var(--red-color),rgb(255, 165, 165));
+    box-shadow: 3px 3px 5px -4px #888888;
+    padding: 5px 10px  !important;
+  }
+  .cancel-button:active{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-image: linear-gradient(to right, var(--red-color),var(--red-color));
+  }
+  .btn-noneborder{
+    color: var(--grey-color) !important;
+    border: none !important;
+    transition: 0.5s;
+    font-size: 15px !important;
+  }
